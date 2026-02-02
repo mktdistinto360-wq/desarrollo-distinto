@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desarrollo Distinto — Soluciones digitales</title>
+  <style>
+    :root {
+      --bg: #0e0e0e;
+      --fg: #f5f5f2;
+      --muted: #b6b6b6;
+      --accent: #e6e2d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.4;
+    }
+    section {
+      padding: 96px 8vw;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    h1, h2, h3 {
+      font-weight: 500;
+      margin: 0 0 24px 0;
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: 48px; max-width: 900px; }
+    h2 { font-size: 32px; }
+    p { max-width: 720px; color: var(--muted); font-size: 18px; }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
+    .tag {
+      color: var(--accent);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .card {
+      padding: 32px;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+    }
+    .video {
+      aspect-ratio: 16 / 9;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer {
+      padding: 64px 8vw;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MÓDULO 1: HERO / HOME -->
+  <section class="hero">
+    <span class="tag">Desarrollo Distinto</span>
+    <h1>Soluciones digitales para los tiempos que corren.</h1>
+    <p>El real estate está creciendo. Hoy gana quien comunica mejor. Creamos sistemas visuales, contenido y campañas para proyectos inmobiliarios que necesitan diferenciarse.</p>
+  </section>
+
+  <!-- MÓDULO 2: QUÉ HACEMOS -->
+  <section>
+    <h2>Qué hacemos</h2>
+    <div class="grid">
+      <div class="card">Branding y concepto de proyecto</div>
+      <div class="card">Producción audiovisual inmobiliaria</div>
+      <div class="card">Campañas comerciales y contenido always-on</div>
+    </div>
+  </section>
+
+  <!-- MÓDULO 3: SHOWREEL / VIDEOS -->
+  <section>
+    <h2>Showreel</h2>
+    <div class="grid">
+      <div class="video">Video 01</div>
+      <div class="video">Video 02</div>
+      <div class="video">Video 03</div>
+      <div class="video">Video 04</div>
+      <div class="video">Video 05</div>
+      <div class="video">Video 06</div>
+    </div>
+  </section>
+
+  <!-- MÓDULO 4: METODOLOGÍA -->
+  <section>
+    <h2>Cómo trabajamos</h2>
+    <p>Diagnóstico, concepto, producción, activación y sistema mensual. Nos integramos como un equipo in-house para acompañar todo el ciclo del proyecto.</p>
+  </section>
+
+  <!-- MÓDULO 5: PARA QUIÉN -->
+  <section>
+    <h2>Para quién es</h2>
+    <div class="grid">
+      <div class="card">Desarrollistas</div>
+      <div class="card">Inmobiliarias</div>
+      <div class="card">Brokers y equipos comerciales</div>
+    </div>
+  </section>
+
+  <!-- MÓDULO 6: CONTACTO -->
+  <section>
+    <h2>Contacto</h2>
+    <p>Trabajamos por proyecto y por sistema mensual. Si querés mostrar mejor lo que estás construyendo, hablemos.</p>
+    <p>Instagram: @desarrollo.distinto</p>
+  </section>
+
+  <footer>
+    © Desarrollo Distinto — Real Estate Marketing
+  </footer>
+
+</body>
+</html>
